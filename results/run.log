@@ -1,0 +1,198 @@
+{"backend": "pg", "tier": "strict", "test": "enqueue", "param": 1, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.302, "jobs_per_s": 1
+{"backend": "pg", "tier": "strict", "test": "enqueue", "param": 4, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.171, "jobs_per_s": 2
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 1, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.563, "jobs_per_s": 710
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 4, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.264, "jobs_per_s": 151
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 8, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.28, "jobs_per_s": 1430
+{"backend": "pg", "tier": "strict", "test": "latency", "param": 4, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 7500, "sent": 7500, "p50_ms": 0.54, "p9
+{"backend": "pg", "tier": "strict_wt", "test": "enqueue", "param": 1, "rep": 1, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 13.193, "jobs_
+{"backend": "pg", "tier": "strict_wt", "test": "enqueue", "param": 4, "rep": 1, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 12.113, "jobs_
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 1, "rep": 1, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 13.979, "jobs_pe
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 4, "rep": 1, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 6.13, "jobs_per_
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 8, "rep": 1, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 3.277, "jobs_per
+{"backend": "pg", "tier": "strict_wt", "test": "latency", "param": 4, "rep": 1, "wal_sync_method": "fsync_writethrough", "jobs": 2679, "sent": 7500, "p50_ms": 1
+{"backend": "pg", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 0.9, "jobs_per_s": 2
+{"backend": "pg", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 0.393, "jobs_per_s":
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 1, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 3.196, "jobs_per_s": 6
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 4, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 1.871, "jobs_per_s": 1
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 8, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 1.755, "jobs_per_s": 1
+{"backend": "pg", "tier": "relaxed", "test": "latency", "param": 4, "rep": 1, "wal_sync_method": "open_datasync", "jobs": 7500, "sent": 7500, "p50_ms": 0.46, "p
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 1, "rep": 1, "jobs": 4000, "seconds": 15.166, "jobs_per_s": 264}
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 4, "rep": 1, "jobs": 4000, "seconds": 6.545, "jobs_per_s": 611}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 1, "rep": 1, "jobs": 4000, "seconds": 14.15, "jobs_per_s": 283, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 4, "rep": 1, "jobs": 4000, "seconds": 7.772, "jobs_per_s": 515, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 8, "rep": 1, "jobs": 4000, "seconds": 3.469, "jobs_per_s": 1153, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "latency", "param": 4, "rep": 1, "jobs": 3911, "sent": 7500, "p50_ms": 3.74, "p99_ms": 9.96, "max_ms": 506.7
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.374, "jobs_per_s": 8424}
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 1.545, "jobs_per_s": 12943}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.228, "jobs_per_s": 8976, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.957, "jobs_per_s": 20897, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 0.59, "jobs_per_s": 33893, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.2, "p99_ms": 1.12, "max_ms": 10.8}
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.25, "jobs_per_s": 8888}
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.844, "jobs_per_s": 23707}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.297, "jobs_per_s": 8707, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.855, "jobs_per_s": 23391, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 0.596, "jobs_per_s": 33574, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.2, "p99_ms": 1.26, "max_ms": 22.11
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 1, "rep": 1, "jobs": 4000, "seconds": 18.61, "jobs_per_s": 215}
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 4, "rep": 1, "jobs": 4000, "seconds": 8.331, "jobs_per_s": 480}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 1, "rep": 1, "jobs": 4000, "seconds": 31.936, "jobs_per_s": 125, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 4, "rep": 1, "jobs": 4000, "seconds": 11.957, "jobs_per_s": 335, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 8, "rep": 1, "jobs": 4000, "seconds": 10.754, "jobs_per_s": 372, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "latency", "param": 4, "rep": 1, "jobs": 3297, "sent": 7500, "p50_ms": 10.01, "p99_ms": 17.53, "max_ms": 3
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.196, "jobs_per_s": 9110}
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.869, "jobs_per_s": 23027}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 4.745, "jobs_per_s": 4215, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 1.686, "jobs_per_s": 11861, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 1.246, "jobs_per_s": 16051, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.37, "p99_ms": 1.74, "max_ms": 15
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.252, "jobs_per_s": 8881}
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.771, "jobs_per_s": 25930}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 4.494, "jobs_per_s": 4451, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 1.62, "jobs_per_s": 12348, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 1.097, "jobs_per_s": 18229, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.38, "p99_ms": 0.99, "max_ms": 7.
+{"backend": "pg", "tier": "strict", "test": "enqueue", "param": 1, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.324, "jobs_per_s": 1
+{"backend": "pg", "tier": "strict", "test": "enqueue", "param": 4, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.167, "jobs_per_s": 2
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 1, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.561, "jobs_per_s": 712
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 4, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.275, "jobs_per_s": 145
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 8, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.274, "jobs_per_s": 145
+{"backend": "pg", "tier": "strict", "test": "latency", "param": 4, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 7500, "sent": 7500, "p50_ms": 0.6, "p99
+{"backend": "pg", "tier": "strict_wt", "test": "enqueue", "param": 1, "rep": 2, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 12.678, "jobs_
+{"backend": "pg", "tier": "strict_wt", "test": "enqueue", "param": 4, "rep": 2, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 12.309, "jobs_
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 1, "rep": 1, "jobs": 4000, "seconds": 15.103, "jobs_per_s": 265}
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 4, "rep": 1, "jobs": 4000, "seconds": 7.824, "jobs_per_s": 511}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 1, "rep": 1, "jobs": 4000, "seconds": 15.153, "jobs_per_s": 264, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 4, "rep": 1, "jobs": 4000, "seconds": 6.912, "jobs_per_s": 579, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 8, "rep": 1, "jobs": 4000, "seconds": 3.674, "jobs_per_s": 1089, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "latency", "param": 4, "rep": 1, "jobs": 4182, "sent": 7500, "p50_ms": 3.99, "p99_ms": 7.24, "max_ms": 22.7}
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.533, "jobs_per_s": 7896}
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.833, "jobs_per_s": 24008}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.342, "jobs_per_s": 8540, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 1.046, "jobs_per_s": 19121, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 0.56, "jobs_per_s": 35682, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.2, "p99_ms": 1.7, "max_ms": 25.08}
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.43, "jobs_per_s": 8231}
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.95, "jobs_per_s": 21044}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.314, "jobs_per_s": 8642, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.79, "jobs_per_s": 25328, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 0.602, "jobs_per_s": 33196, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.2, "p99_ms": 0.56, "max_ms": 7.16}
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 1, "rep": 1, "jobs": 4000, "seconds": 14.939, "jobs_per_s": 268}
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 4, "rep": 1, "jobs": 4000, "seconds": 6.693, "jobs_per_s": 598}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 1, "rep": 1, "jobs": 4000, "seconds": 31.657, "jobs_per_s": 126, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 4, "rep": 1, "jobs": 4000, "seconds": 13.36, "jobs_per_s": 299, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 8, "rep": 1, "jobs": 4000, "seconds": 9.349, "jobs_per_s": 428, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "latency", "param": 4, "rep": 1, "jobs": 3339, "sent": 7500, "p50_ms": 10.0, "p99_ms": 19.03, "max_ms": 43
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.492, "jobs_per_s": 8025}
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.832, "jobs_per_s": 24043}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 4.858, "jobs_per_s": 4117, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 1.666, "jobs_per_s": 12007, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 1.126, "jobs_per_s": 17754, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.36, "p99_ms": 1.37, "max_ms": 6.
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 1, "rep": 1, "jobs": 20000, "seconds": 2.266, "jobs_per_s": 8826}
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 4, "rep": 1, "jobs": 20000, "seconds": 0.771, "jobs_per_s": 25940}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 1, "rep": 1, "jobs": 20000, "seconds": 4.536, "jobs_per_s": 4409, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 4, "rep": 1, "jobs": 20000, "seconds": 1.597, "jobs_per_s": 12522, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 8, "rep": 1, "jobs": 20000, "seconds": 1.03, "jobs_per_s": 19415, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "latency", "param": 4, "rep": 1, "jobs": 7500, "sent": 7500, "p50_ms": 0.36, "p99_ms": 1.88, "max_ms": 9.
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 1, "rep": 2, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 15.277, "jobs_pe
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 4, "rep": 2, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 6.045, "jobs_per
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 8, "rep": 2, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 3.296, "jobs_per
+{"backend": "pg", "tier": "strict_wt", "test": "latency", "param": 4, "rep": 2, "wal_sync_method": "fsync_writethrough", "jobs": 3228, "sent": 7500, "p50_ms": 1
+{"backend": "pg", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 1.73, "jobs_per_s": 
+{"backend": "pg", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 0.364, "jobs_per_s":
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 1, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 2.85, "jobs_per_s": 70
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 4, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 1.162, "jobs_per_s": 1
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 8, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 1.135, "jobs_per_s": 1
+{"backend": "pg", "tier": "relaxed", "test": "latency", "param": 4, "rep": 2, "wal_sync_method": "open_datasync", "jobs": 7500, "sent": 7500, "p50_ms": 0.42, "p
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 1, "rep": 2, "jobs": 4000, "seconds": 14.849, "jobs_per_s": 269}
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 4, "rep": 2, "jobs": 4000, "seconds": 6.928, "jobs_per_s": 577}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 1, "rep": 2, "jobs": 4000, "seconds": 15.029, "jobs_per_s": 266, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 4, "rep": 2, "jobs": 4000, "seconds": 6.518, "jobs_per_s": 614, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 8, "rep": 2, "jobs": 4000, "seconds": 3.378, "jobs_per_s": 1184, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "latency", "param": 4, "rep": 2, "jobs": 4069, "sent": 7500, "p50_ms": 4.05, "p99_ms": 7.64, "max_ms": 24.48
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 2, "jobs": 20000, "seconds": 2.302, "jobs_per_s": 8688}
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 2, "jobs": 20000, "seconds": 0.795, "jobs_per_s": 25148}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 1, "rep": 2, "jobs": 20000, "seconds": 2.325, "jobs_per_s": 8604, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 4, "rep": 2, "jobs": 20000, "seconds": 0.784, "jobs_per_s": 25513, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 8, "rep": 2, "jobs": 20000, "seconds": 0.541, "jobs_per_s": 36964, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "latency", "param": 4, "rep": 2, "jobs": 7500, "sent": 7500, "p50_ms": 0.18, "p99_ms": 0.71, "max_ms": 7.77
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 1, "rep": 2, "jobs": 20000, "seconds": 2.237, "jobs_per_s": 8941}
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 4, "rep": 2, "jobs": 20000, "seconds": 0.735, "jobs_per_s": 27228}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 1, "rep": 2, "jobs": 20000, "seconds": 2.196, "jobs_per_s": 9109, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 4, "rep": 2, "jobs": 20000, "seconds": 0.736, "jobs_per_s": 27161, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 8, "rep": 2, "jobs": 20000, "seconds": 0.5, "jobs_per_s": 39968, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "latency", "param": 4, "rep": 2, "jobs": 7500, "sent": 7500, "p50_ms": 0.18, "p99_ms": 1.04, "max_ms": 7.58
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 1, "rep": 2, "jobs": 4000, "seconds": 14.438, "jobs_per_s": 277}
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 4, "rep": 2, "jobs": 4000, "seconds": 6.649, "jobs_per_s": 602}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 1, "rep": 2, "jobs": 4000, "seconds": 29.925, "jobs_per_s": 134, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 4, "rep": 2, "jobs": 4000, "seconds": 14.176, "jobs_per_s": 282, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 8, "rep": 2, "jobs": 4000, "seconds": 8.082, "jobs_per_s": 495, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "latency", "param": 4, "rep": 2, "jobs": 3240, "sent": 7500, "p50_ms": 10.91, "p99_ms": 17.75, "max_ms": 4
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 2, "jobs": 20000, "seconds": 2.35, "jobs_per_s": 8510}
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 2, "jobs": 20000, "seconds": 0.777, "jobs_per_s": 25736}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 1, "rep": 2, "jobs": 20000, "seconds": 5.031, "jobs_per_s": 3975, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 4, "rep": 2, "jobs": 20000, "seconds": 1.654, "jobs_per_s": 12091, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 8, "rep": 2, "jobs": 20000, "seconds": 1.152, "jobs_per_s": 17367, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "latency", "param": 4, "rep": 2, "jobs": 7500, "sent": 7500, "p50_ms": 0.32, "p99_ms": 1.12, "max_ms": 10
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 1, "rep": 2, "jobs": 20000, "seconds": 2.308, "jobs_per_s": 8665}
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 4, "rep": 2, "jobs": 20000, "seconds": 0.764, "jobs_per_s": 26190}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 1, "rep": 2, "jobs": 20000, "seconds": 4.426, "jobs_per_s": 4519, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 4, "rep": 2, "jobs": 20000, "seconds": 1.519, "jobs_per_s": 13171, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 8, "rep": 2, "jobs": 20000, "seconds": 1.025, "jobs_per_s": 19504, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "latency", "param": 4, "rep": 2, "jobs": 7500, "sent": 7500, "p50_ms": 0.36, "p99_ms": 0.8, "max_ms": 4.9
+{"backend": "pg", "tier": "strict", "test": "enqueue", "param": 1, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.334, "jobs_per_s": 1
+{"backend": "pg", "tier": "strict", "test": "enqueue", "param": 4, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.19, "jobs_per_s": 21
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 1, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.585, "jobs_per_s": 684
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 4, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.259, "jobs_per_s": 154
+{"backend": "pg", "tier": "strict", "test": "drain", "param": 8, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 4000, "seconds": 0.262, "jobs_per_s": 152
+{"backend": "pg", "tier": "strict", "test": "latency", "param": 4, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 7500, "sent": 7500, "p50_ms": 0.65, "p9
+{"backend": "pg", "tier": "strict_wt", "test": "enqueue", "param": 1, "rep": 3, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 14.411, "jobs_
+{"backend": "pg", "tier": "strict_wt", "test": "enqueue", "param": 4, "rep": 3, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 11.855, "jobs_
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 1, "rep": 3, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 16.07, "jobs_per
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 4, "rep": 3, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 6.09, "jobs_per_
+{"backend": "pg", "tier": "strict_wt", "test": "drain", "param": 8, "rep": 3, "wal_sync_method": "fsync_writethrough", "jobs": 4000, "seconds": 3.296, "jobs_per
+{"backend": "pg", "tier": "strict_wt", "test": "latency", "param": 4, "rep": 3, "wal_sync_method": "fsync_writethrough", "jobs": 3284, "sent": 7500, "p50_ms": 1
+{"backend": "pg", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 0.793, "jobs_per_s":
+{"backend": "pg", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 0.382, "jobs_per_s":
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 1, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 2.913, "jobs_per_s": 6
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 4, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 1.191, "jobs_per_s": 1
+{"backend": "pg", "tier": "relaxed", "test": "drain", "param": 8, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 20000, "seconds": 1.139, "jobs_per_s": 1
+{"backend": "pg", "tier": "relaxed", "test": "latency", "param": 4, "rep": 3, "wal_sync_method": "open_datasync", "jobs": 7500, "sent": 7500, "p50_ms": 0.43, "p
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 1, "rep": 3, "jobs": 4000, "seconds": 14.844, "jobs_per_s": 269}
+{"backend": "redis_list", "tier": "strict", "test": "enqueue", "param": 4, "rep": 3, "jobs": 4000, "seconds": 7.051, "jobs_per_s": 567}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 1, "rep": 3, "jobs": 4000, "seconds": 15.645, "jobs_per_s": 256, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 4, "rep": 3, "jobs": 4000, "seconds": 7.371, "jobs_per_s": 543, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "drain", "param": 8, "rep": 3, "jobs": 4000, "seconds": 3.812, "jobs_per_s": 1049, "all_drained": true}
+{"backend": "redis_list", "tier": "strict", "test": "latency", "param": 4, "rep": 3, "jobs": 4048, "sent": 7500, "p50_ms": 4.05, "p99_ms": 7.48, "max_ms": 18.15
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 3, "jobs": 20000, "seconds": 2.227, "jobs_per_s": 8981}
+{"backend": "redis_list", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 3, "jobs": 20000, "seconds": 0.798, "jobs_per_s": 25075}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 1, "rep": 3, "jobs": 20000, "seconds": 2.243, "jobs_per_s": 8917, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 4, "rep": 3, "jobs": 20000, "seconds": 0.839, "jobs_per_s": 23830, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "drain", "param": 8, "rep": 3, "jobs": 20000, "seconds": 0.541, "jobs_per_s": 36946, "all_drained": true}
+{"backend": "redis_list", "tier": "relaxed", "test": "latency", "param": 4, "rep": 3, "jobs": 7500, "sent": 7500, "p50_ms": 0.17, "p99_ms": 0.69, "max_ms": 7.86
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 1, "rep": 3, "jobs": 20000, "seconds": 2.329, "jobs_per_s": 8587}
+{"backend": "redis_list", "tier": "default", "test": "enqueue", "param": 4, "rep": 3, "jobs": 20000, "seconds": 0.782, "jobs_per_s": 25582}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 1, "rep": 3, "jobs": 20000, "seconds": 2.198, "jobs_per_s": 9098, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 4, "rep": 3, "jobs": 20000, "seconds": 0.726, "jobs_per_s": 27547, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "drain", "param": 8, "rep": 3, "jobs": 20000, "seconds": 0.512, "jobs_per_s": 39052, "all_drained": true}
+{"backend": "redis_list", "tier": "default", "test": "latency", "param": 4, "rep": 3, "jobs": 7500, "sent": 7500, "p50_ms": 0.26, "p99_ms": 5.73, "max_ms": 283.
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 1, "rep": 3, "jobs": 4000, "seconds": 14.907, "jobs_per_s": 268}
+{"backend": "redis_stream", "tier": "strict", "test": "enqueue", "param": 4, "rep": 3, "jobs": 4000, "seconds": 7.09, "jobs_per_s": 564}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 1, "rep": 3, "jobs": 4000, "seconds": 27.283, "jobs_per_s": 147, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 4, "rep": 3, "jobs": 4000, "seconds": 13.602, "jobs_per_s": 294, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "drain", "param": 8, "rep": 3, "jobs": 4000, "seconds": 7.515, "jobs_per_s": 532, "all_drained": true}
+{"backend": "redis_stream", "tier": "strict", "test": "latency", "param": 4, "rep": 3, "jobs": 2560, "sent": 7500, "p50_ms": 10.86, "p99_ms": 45.58, "max_ms": 5
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 1, "rep": 3, "jobs": 20000, "seconds": 2.388, "jobs_per_s": 8376}
+{"backend": "redis_stream", "tier": "relaxed", "test": "enqueue", "param": 4, "rep": 3, "jobs": 20000, "seconds": 0.837, "jobs_per_s": 23897}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 1, "rep": 3, "jobs": 20000, "seconds": 4.968, "jobs_per_s": 4026, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 4, "rep": 3, "jobs": 20000, "seconds": 1.724, "jobs_per_s": 11602, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "drain", "param": 8, "rep": 3, "jobs": 20000, "seconds": 1.28, "jobs_per_s": 15629, "all_drained": true}
+{"backend": "redis_stream", "tier": "relaxed", "test": "latency", "param": 4, "rep": 3, "jobs": 7500, "sent": 7500, "p50_ms": 0.38, "p99_ms": 2.09, "max_ms": 8.
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 1, "rep": 3, "jobs": 20000, "seconds": 2.322, "jobs_per_s": 8614}
+{"backend": "redis_stream", "tier": "default", "test": "enqueue", "param": 4, "rep": 3, "jobs": 20000, "seconds": 0.756, "jobs_per_s": 26449}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 1, "rep": 3, "jobs": 20000, "seconds": 4.675, "jobs_per_s": 4278, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 4, "rep": 3, "jobs": 20000, "seconds": 1.556, "jobs_per_s": 12854, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "drain", "param": 8, "rep": 3, "jobs": 20000, "seconds": 1.114, "jobs_per_s": 17954, "all_drained": true}
+{"backend": "redis_stream", "tier": "default", "test": "latency", "param": 4, "rep": 3, "jobs": 7500, "sent": 7500, "p50_ms": 0.38, "p99_ms": 1.63, "max_ms": 16

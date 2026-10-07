@@ -1,0 +1,5 @@
+hiredis==3.4.2
+psutil==7.2.2
+psycopg==3.3.6
+psycopg-binary==3.3.6
+redis==8.1.0

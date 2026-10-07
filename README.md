@@ -1,0 +1,85 @@
+# postgres-vs-redis-queue
+
+Postgres (`FOR UPDATE SKIP LOCKED`) vs Redis lists vs Redis Streams as a job queue from Python, at
+matched durability: enqueue throughput, drain throughput and pickup latency. Companion to
+*Postgres vs Redis as a Job Queue: Postgres Enqueued 2.5x Faster, Redis Drained 2x Faster*.
+
+![throughput](results/02-throughput.png)
+
+## Results
+
+```
+Jobs per second, median of 3 runs
+
+Durability: up to ~1 s of jobs at risk on a crash
+(Postgres synchronous_commit=off, Redis appendfsync everysec)
+
+                        enqueue  enqueue   drain   drain   drain
+                         1 prod   4 prod   1 wkr   4 wkr   8 wkr
+---------------------   -------  -------  ------  ------  ------
+Postgres SKIP LOCKED     22,225   52,295   6,866  16,798  17,562
+Redis list                8,688   25,075   8,604  23,830  36,946
+Redis stream              8,376   24,043   4,026  12,007  17,367
+
+
+Durability: every job flushed to disk before it is acknowledged
+(Postgres fsync_writethrough, Redis appendfsync always; both F_FULLFSYNC on macOS)
+
+                        enqueue  enqueue   drain   drain   drain
+                         1 prod   4 prod   1 wkr   4 wkr   8 wkr
+---------------------   -------  -------  ------  ------  ------
+Postgres SKIP LOCKED        303      330     262     657   1,214
+Redis list                  269      567     264     579   1,089
+Redis stream                268      598     134     294     495
+PG, macOS default*       12,335   23,374   7,105  15,153  14,588
+* wal_sync_method=open_datasync, which on macOS does not flush the drive cache
+
+
+Pickup latency at a steady 500 jobs/s, 4 workers (median of 3 runs)
+
+                         durability   p50 ms   p99 ms  kept up
+---------------------   -----------   ------   ------  -------
+Postgres SKIP LOCKED           ~1 s     0.43     0.66      yes
+Redis list                     ~1 s     0.18     0.71      yes
+Redis stream                   ~1 s     0.36     1.37      yes
+Postgres SKIP LOCKED        flushed    11.01    17.97      43%
+Redis list                  flushed     4.05     7.48      54%
+Redis stream                flushed    10.86    19.03      43%
+
+
+redis-py with and without the hiredis parser, relaxed tier, rep 1 (jobs/s)
+
+                             without      with
+-------------------------   --------  --------
+Redis list enqueue 1           8,424     7,896
+Redis list drain 8            33,893    35,682
+Redis stream enqueue 1         9,110     8,025
+Redis stream drain 8          16,051    17,754
+```
+
+## Durability tiers
+
+| tier | Postgres | Redis |
+|---|---|---|
+| relaxed | `synchronous_commit = off` | `appendonly yes`, `appendfsync everysec` |
+| strict_wt | `synchronous_commit = on`, `wal_sync_method = fsync_writethrough` | `appendfsync always` |
+| strict (PG only) | `synchronous_commit = on`, macOS default `open_datasync` (does not flush the drive cache) | |
+| default (Redis only) | | `appendonly no` (out of the box) |
+
+On macOS Redis fsyncs with `F_FULLFSYNC`; only `fsync_writethrough` makes Postgres equivalent.
+
+## Reproduce
+
+```
+uv venv -p 3.13 .venv && uv pip install -r requirements.txt
+# Postgres on 5499 (user bench), Redis on 6399
+python harness/run_all.py && python harness/analyze.py
+bash harness/c_crosscheck.sh
+```
+
+`results/runs_redis_without_hiredis.jsonl` holds the first Redis pass, before hiredis was installed.
+Apple M2, 8 GB, macOS, Postgres 16.15, Redis 8.10.2, psycopg 3.3.6, redis-py 8.1.0 + hiredis 3.4.2.
+
+## License
+
+MIT
